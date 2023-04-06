@@ -33,6 +33,7 @@ import { ConnexionComponent } from './front-office/sections/connexion/connexion.
 import { ProgressIndeterminateModule } from './front-office/shared/progress-indeterminate/progress-indeterminate.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { SignupComponent } from './front-office/pages/authentification/signup/signup.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -58,6 +59,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RecomArticlesComponent,
     SubscriptionComponent,
     FontactFormComponent,
+    SignupComponent,
 
     // shared sections
     FooterComponent,

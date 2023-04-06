@@ -1,0 +1,315 @@
+<!-- header begin -->
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="../../../assets/img/sl_darkBG.png" alt="LOGO"
+                                    style="width: 200px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-xl-none d-lg-none d-flex justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="main-menu">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <app-navigation></app-navigation>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-none align-items-center justify-content-end">
+                <app-connexion></app-connexion>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- breadcrumb begin  -->
+<div class="breadcrumb-pok" style="padding-top: 25px;">
+    <img class="br-shape-left" src="assets/img/breadcrumb/left-bg.png" alt="">
+    <img class="br-shape-right" src="assets/img/breadcrumb/right-bg.png" alt="">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+                <!-- <div class="breadcrumb-content">
+                    <span class="subtitle">Sign In</span>
+                    <h2 class="title">Sign In to enter, if you've an account</h2>
+                    <div class="page-links">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <span class="current-page">{{ 'connexion' | translate }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb end  -->
+
+<!-- sign-in begin -->
+<div class="sign-in">
+    <div class="container">
+        <div class="row justify-content-lg-between justify-content-center">
+            <div class="col-xl-5 col-lg-6">
+                <div class="poklotto-form">
+                    <h3 class="title">{{ 'register' | translate }}</h3>
+                    <div class="part-form">
+                        <form [formGroup]="form" (ngSubmit)="submit()">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <label for="mail_address" class="form-label" style="margin-top: 0;">{{
+                                        'user.firstName' | translate }}</label>
+                                    <input type="text" class="form-control" formControlName="field_firstName"
+                                        placeholder="{{ 'enterYour' | translate }}{{ 'user.firstName' | translate }}"
+                                        id="field_firstName" [ngClass]="{
+                                      'is-invalid': f['field_firstName'].touched && f['field_firstName'].invalid
+                                    }">
+                                    <div *ngIf="f['field_firstName'].touched && f['field_firstName'].invalid"
+                                        class="invalid-feedback">
+                                        <div
+                                            *ngIf="f['field_firstName'].errors && f['field_firstName'].errors['required']">
+                                            {{ 'firstNameRequired' | translate }}
+                                        </div>
+                                        <div
+                                            *ngIf="f['field_firstName'].errors && f['field_firstName'].errors['field_firstName']">
+                                            {{ 'firstNameRequired' | translate }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12" style="margin-top: 20px;">
+                                    <label for="mail_address" class="form-label" style="margin-top: 0;">{{
+                                        'user.lastName' | translate }}</label>
+                                    <input type="text" class="form-control" formControlName="field_lastName"
+                                        placeholder="{{ 'enterYour' | translate }}{{ 'user.lastName' | translate }}"
+                                        id="field_lastName" [ngClass]="{
+                                      'is-invalid': f['field_lastName'].touched && f['field_lastName'].invalid
+                                    }">
+                                    <div *ngIf="f['field_lastName'].touched && f['field_lastName'].invalid"
+                                        class="invalid-feedback">
+                                        <div
+                                            *ngIf="f['field_lastName'].errors && f['field_lastName'].errors['required']">
+                                            {{ 'lastNameRequired' | translate }}
+                                        </div>
+                                        <div
+                                            *ngIf="f['field_lastName'].errors && f['field_lastName'].errors['field_lastName']">
+                                            {{ 'lastNameRequired' | translate }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12" style="margin-top: 20px;">
+                                    <label for="country-select" class="form-label" style="margin-top: 0;">{{
+                                        'user.country' | translate }}</label>
+                                    <select (change)="onSelect($event)" name="country" id="country-select"
+                                        class="form-control" formControlName="field_country" [ngClass]="{
+                                  'is-invalid': f['field_country'].touched && f['field_country'].invalid
+                                }">
+                                        <option value="">--{{ 'selectCountry' | translate }}--</option>
+                                        <option *ngFor="let countries of country" value="{{countries.id}}">
+                                            {{countries.name}}
+                                        </option>
+                                    </select>
+                                    <div *ngIf="f['field_country'].touched && f['field_country'].invalid"
+                                        class="invalid-feedback">
+                                        <div *ngIf="f['field_country'].errors && f['field_country'].errors['required']">
+                                            {{ 'countryRequired' | translate }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12" style="margin-top: 20px;">
+                                    <div class="form-group">
+                                      <label class="form-control-label">{{ 'user.location' | translate }} :</label>
+                                      <select name="city" id="city-select" class="form-control" formControlName="field_location"
+                                      [ngClass]="{
+                                        'is-invalid': f['field_location'].touched && f['field_location'].invalid
+                                      }">
+                                        <option value="">--{{ 'selectCity' | translate }}--</option>
+                                        <option *ngFor="let cities of city" value="{{cities.name}}">{{cities.name}}</option>
+                                      </select>
+                                      <div *ngIf="f['field_location'].touched && f['field_location'].invalid" class="invalid-feedback">
+                                        <div *ngIf="f['field_location'].errors && f['field_location'].errors['required']">
+                                          {{ 'cityRequired' | translate }}
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- <label for="city-select" class="form-label" style="margin-top: 0;">{{
+                                        'user.location' | translate }}</label>
+                                    <select (change)="onSelect($event)" name="city" id="city-select"
+                                        class="form-control" formControlName="field_location" [ngClass]="{
+                                  'is-invalid': f['field_location'].touched && f['field_location'].invalid
+                                }">
+                                        <option value="">--{{ 'selectCity' | translate }}--</option>
+                                        <option *ngFor="let cities of city" value="{{cities.name}}">{{cities.name}}
+                                        </option>
+                                    </select>
+                                    <div *ngIf="f['field_location'].touched && f['field_location'].invalid"
+                                        class="invalid-feedback">
+                                        <div
+                                            *ngIf="f['field_location'].errors && f['field_location'].errors['required']">
+                                            {{ 'cityRequired' | translate }}
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="col-xl-12" style="margin-top: 20px;">
+                                    <label for="mail_address" class="form-label" style="margin-top: 0;">{{
+                                        'user.emailAdress' | translate }}</label>
+                                    <input type="email" class="form-control" formControlName="field_email"
+                                        placeholder="{{ 'enterYour' | translate }}{{ 'user.email' | translate }}"
+                                        id="field_email" [ngClass]="{
+                                      'is-invalid': f['field_email'].touched && f['field_email'].invalid
+                                    }">
+                                    <div class="invalid-feedback" *ngIf="CustomControler?.status === 'email'">
+                                        {{ CustomControler.message }}
+                                    </div>
+                                    <div *ngIf="f['field_email'].touched && f['field_email'].invalid"
+                                        class="invalid-feedback">
+                                        <div *ngIf="f['field_email'].errors && f['field_email'].errors['required']">
+                                            {{ 'emailRequired' | translate }}
+                                        </div>
+                                        <div *ngIf="f['field_email'].errors && f['field_email'].errors['field_email']">
+                                            {{ 'enterValidEmail' | translate }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12" style="margin-top: 20px;">
+                                    <label for="last_name" class="form-label">{{ 'user.password' | translate }}</label>
+                                    <input type="password" class="form-control"
+                                        [type]="Toggledata ? 'password' : 'text'" type="password"
+                                        formControlName="field_password"
+                                        placeholder="{{ 'enterYour' | translate }}{{ 'user.password' | translate }}"
+                                        id="password" [ngClass]="{
+                                      'is-invalid':
+                                        f['field_password'].touched && f['field_password'].invalid
+                                    }" />
+                                    <span
+                                        [ngClass]="Toggledata == true ? 'fas toggle-field_password fa-eye-slash' : 'fas toggle-field_password fa-eye'"
+                                        (click)="iconLogle()"></span>
+                                    <div *ngIf="f['field_password'].touched && f['field_password'].invalid"
+                                        class="invalid-feedback">
+                                        <div *ngIf="
+                                          f['field_password'].errors && f['field_password'].errors['required']
+                                        ">
+                                            {{ 'passwordRequired' | translate }}
+                                        </div><br>
+                                        <div style="background-color: rgba(248, 180, 71, 0.575);
+                                      border-radius: 5px;
+                                      padding: 5px;
+                                      margin-top: 5px"><b style="color: #000"> {{ 'pwdShouldBe' | translate }}:
+                                            </b><br>
+                                            <ol>
+                                                <li style="color: #000">{{ 'upTo8Char' | translate }}</li>
+                                                <li style="color: #000">{{ 'upTo1Captal' | translate }}</li>
+                                                <li style="color: #000">{{ 'upTo1Number' | translate }}</li>
+                                                <li style="color: #000">{{ 'upTo1SpecialCahr' | translate }}</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group" style="margin-top: 10px;">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="container">
+                                                <label class="container2">
+                                                <input type="checkbox" checked="checked" formControlName="field_agree">
+                                                <div class="checkmark"></div>
+                                              </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-11 text-end">
+                                            <p>
+                                            {{ 'agreeAll' | translate }} <a href="" class="reg-link2">{{
+                                                'terms' | translate }}</a> {{ 'and' | translate }} <a href="" class="reg-link2">{{ 'policy' | translate }}</a>
+                                              {{ 'dataUsage' | translate }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="part-submit col-10">
+                                <button [disabled]="form.invalid" *ngIf="!waitingResponse"
+                                    class="btn btn-lg btn-block btn-primary w-100 btn-pok" type="submit">
+                                    {{ 'connexion' | translate }}<i class="fa-solid fa-angle-right"></i>
+                                </button>
+                                <div *ngIf="waitingResponse">
+                                    <app-progress-indeterminate></app-progress-indeterminate>
+                                </div>
+                                <p>{{ 'haveAccount' | translate }}?
+                                    <a (click)="navigateToLogin()" class="reg-link">{{ 'connexion' | translate
+                                        }}</a>.
+                                </p>
+                            </div>
+                        </form>
+                        <div class="part-connect-social-info">
+                            <div class="title-overlap">
+                                <h4 class="title">{{ 'orSW' | translate }}</h4>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a class="single-social s-pinterest"><i
+                                            class="fa-brands fa-brands fa-google"></i></a>
+                                </li>
+                                <li>
+                                    <a class="single-social s-facebook"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a class="single-social s-twitter"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 col-md-8 col-sm-10 d-xl-flex d-lg-flex d-block align-items-center">
+                <div class="part-right">
+                    <div class="part-img">
+                        <img src="assets/img/sign-in/sign-in-img.png" alt="">
+                    </div>
+                    <div class="part-text">
+                        <div class="section-title">
+                            <h3 class="sub-title">{{ 'welcome' | translate }} {{ 'to' | translate }} SmartesLotto</h3>
+                            <h2 class="title">Sign in and pick lucky number with just one click.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sign-in end -->
+
+<!-- footer begin -->
+<app-footer></app-footer>
+<!-- footer end -->
+
+<!-- back to button begin -->
+<div class="back-to-top-btn">
+    <a href="#">
+        <i class="fa-solid fa-arrow-turn-up"></i>
+    </a>
+</div>
+<!-- back to top button end -->

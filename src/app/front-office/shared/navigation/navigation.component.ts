@@ -32,6 +32,7 @@ export class NavigationComponent implements OnInit {
     this.translationService.setLanguage('fr');
   }
 
+  
   navigateToHome() {
     this.router.navigate(['/front']);
   }
