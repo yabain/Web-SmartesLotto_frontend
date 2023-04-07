@@ -21,6 +21,13 @@ const routes: Routes = [
         (m) => m.AuthentificationModule
       ),
   },
+  {
+    path: 'mail',
+    loadChildren: () =>
+      import(
+        './front-office/pages/authentification/mail-link/mail-link.module'
+      ).then((m) => m.MailLinkModule),
+  },
   { path: '**', redirectTo: 'front', pathMatch: 'full' },
 
 ];

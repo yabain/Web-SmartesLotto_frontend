@@ -259,7 +259,7 @@ export class ApiService {
       }
       endpoint += '?' + req;
     }
-    console.log(this.url + '/' + endpoint);
+    console.log(this.url + '/' + endpoint, { 'headers': options });
     return this.http.get(this.url + '/' + endpoint, { 'headers': options });
   }
 
@@ -385,7 +385,7 @@ export class ApiService {
 
 
         if (error && error.error === 'invalid_request') {
-          this.toastr.success(error.message);
+          this.toastr.error(error.message, null,  {timeOut: 7000});
         }
 
         reject(error);
@@ -406,13 +406,13 @@ export class ApiService {
     switch (error.status) {
 
       case 0:
-        this.toastr.success('Please check your internet connexion.');
+        this.toastr.error('Please check your internet connexion.', null, {timeOut: 7000});
         break;
 
       case 403:
         this.refreshAccesToken();
         if (error && error.error && error.error.message) {
-          this.toastr.success(error.error.message);
+          this.toastr.error(error.error.message, null, {timeOut: 7000});
         }
         break;
 
