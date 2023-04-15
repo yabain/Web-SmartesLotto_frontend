@@ -9,6 +9,7 @@ import { TranslationService } from './services/translation/language.service';
 })
 export class AppComponent {
   title = 'smartestlotto';
+  windowScrolled = false;
 
   constructor(
 		public translate: TranslateService,
@@ -17,6 +18,15 @@ export class AppComponent {
 		this.translationService.initLanguage();
     translate.setDefaultLang('fr');
     // translate.use('fr');
+  }
 
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.windowScrolled = window.pageYOffset !== 0;
+    });
+  }
+  
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 }

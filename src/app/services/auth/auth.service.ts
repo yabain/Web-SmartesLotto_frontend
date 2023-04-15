@@ -259,7 +259,7 @@ export class AuthService {
         .subscribe(response => {
           const profilePicture = response.data.user.profilePicture;
           console.log('img url: ', profilePicture)
-          const words = profilePicture.split('.com/');
+          const words = profilePicture.split('.io/');
           response.data.user.profilePicture = words[1];
           // console.log('img url words: ', words[1])
 
@@ -272,8 +272,10 @@ export class AuthService {
           this.api.setAccessToken(response.data.access_token);
           console.log('User infos: ', response.data.user);
           this.user.setUserInformations(response.data.user)
-          this.router.navigate(['front/about']);
-          this.toastr.success('Welcome !!', null, { timeOut: 5000 });
+          this.router.navigate(['home']);
+          setTimeout(()=>{
+            this.toastr.success('Welcome !!', null, { timeOut: 5000 });
+          }, 500);
           resolve(response);
         }, error => {
           if (error.status == 500) {

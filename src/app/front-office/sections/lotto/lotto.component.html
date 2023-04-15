@@ -1,0 +1,112 @@
+<div class="lotteries front">
+    <div class="bg-shape-2">
+        <img src="assets/img/bg-shape/bg-shape-2.png" alt="">
+    </div>
+    <div class="bg-shape-1">
+        <img src="assets/img/bg-shape/bg-shape-1.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8">
+                <div class="section-title">
+                    <h3 class="sub-title">{{ 'lottoDemo.allLotto' | translate }}</h3>
+                    <h2 class="title">{{ 'lottoDemo.pickLucky' | translate }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="part-picking-number">
+
+            <div class="animation-body animated">
+                <div class="picking-number-header">
+                    <img src="assets/img/lottery/lottery-header-right-img.png" alt="" class="lottery-bg-img">
+                    <div class="part-lottery-info">
+                        <div class="part-img selected-lottery-logo">
+                            <img src="assets/img/lottery/euro-jackpot-big.png" alt="">
+                        </div>
+                        <div class="part-text">
+                            <span class="lottery-name">Euro Jackpot</span>
+                            <span class="estimate-prize">{{ 'lottoDemo.estimePrize' | translate }} : <span
+                                    class="prize-amount">€25.0248</span></span>
+                        </div>
+                    </div>
+                    <div class="part-lottery-function-btn">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-numbers-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-numbers" type="button" role="tab"
+                                    aria-controls="pills-numbers" aria-selected="true">{{ 'lottoDemo.pick6Num' |
+                                    translate }}</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-winners-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-winners" type="button" role="tab"
+                                    aria-controls="pills-winners" aria-selected="false">{{ 'lottoDemo.winners' |
+                                    translate }}</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-info-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info"
+                                    aria-selected="false">{{ 'lottoDemo.prizes' | translate }} & {{ 'lottoDemo.info' |
+                                    translate }}</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="part-picking-number">
+                    <div class="picking-number-body">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-numbers" role="tabpanel"
+                                aria-labelledby="pills-numbers-tab">
+                                <div class="picking-number-palate">
+                                    <div class="number-box common">
+
+                                        <div class="lotto-container">
+                                            <div class="lotto-grid">
+                                                <div *ngFor="let number of numbers"
+                                                    [class.selected]="selectedNumbers.includes(number)"
+                                                    (click)="toggleSelection(number)">
+                                                    {{ number }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="number-box special">
+                                        <button *ngFor="let number of bonusNumbers" 
+                                        [class.selected]="isSpecialSelected(number)"
+                                        (click)="toggleBonusNumberSelection(number)"
+                                        class="single-number selected special">
+                                        {{ number }}
+                                        </button>
+                                    </div>
+                                    <!-- <button class="random-btn2" (click)="draw()">Tirer les numéros <i
+                                            class="fa-solid fa-arrows-rotate"></i></button> -->
+                                </div>
+                                <div class="picking-number-result">
+                                    <div class="part-title">
+                                        <h3 class="title">{{ 'lottoDemo.selectNum' | translate }}:</h3>
+                                    </div>
+                                    <div class="result-number-palate">
+                                        <button class="single-number selected" *ngFor="let number of selectedNumbers">
+                                            {{ number }}
+                                        </button>
+                                        <button class="single-number selected special" *ngIf="selectedBonusNumber">
+                                            {{ selectedBonusNumber }}
+                                        </button>
+                                    </div>
+                                    <div class="picking-number-quick-buttons">
+                                        <button class="clear-btn"  (click)="clearAll()">{{ 'clearAll' | translate }} <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button class="auto-select-btn" (click)="draw()">{{ 'lottoDemo.autoSelect' | translate }} <i
+                                                class="fa-solid fa-arrows-rotate"></i></button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1941 @@
+.lotto-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.lotto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.lotto-grid div {
+    background-color: #fff;
+    border: 1px solid rgba(13, 59, 84, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3D6276;
+    cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 1px;
+    width: 45px;
+    height: 45px;
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    font-weight: 500;
+    margin: 11px;
+}
+
+.lotto-grid div.selected {
+    background: linear-gradient(317.37deg, #1F556B 2.76%, #1C798E 63.36%);
+    -webkit-box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border-color: transparent;
+}
+
+
+.box-content{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #B6C2C8;
+    border-radius: 10px;
+    padding: 19px;
+    justify-content: center;
+}
+
+.random-btn{
+    margin-top: 20px;
+    border: 1px solid #B6C2C8;
+    background: none;
+    font-weight: 500;
+    height: 45px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.8);
+    padding: 0 25px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-btn2{
+    margin-top: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    display: inline-block;
+    height: 60px;
+    line-height: 56px;
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+    box-shadow: 0px 9px 37px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0 35px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+  /*==========================================
+    03. Lotteries
+==========================================*/
+.lotteries {
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries {
+      padding: 100px 0;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries {
+      padding: 80px 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries {
+      padding: 60px 0;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu {
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu {
+      margin-bottom: 53px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu {
+      margin-bottom: 42px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu {
+      margin-bottom: 28px;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li {
+      width: 33.3333333333%;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item {
+      margin-right: 45px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item {
+      margin: 12px;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span {
+    display: inline-block;
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon {
+    border: 1px solid #b6c4cb;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    background: -webkit-linear-gradient(219.47deg, #F08B6B 15.1%, #C5B310 86.62%);
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon {
+      margin-bottom: 11px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon {
+      padding: 8px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon {
+      margin-bottom: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon img {
+    width: auto;
+    max-width: none;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon img {
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon img {
+      height: 75px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon img {
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-icon img {
+      height: 50px;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-name {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #567687;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-name {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-name {
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item span.lottery-name {
+      display: none;
+    }
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item.active span.lottery-icon {
+    border-color: transparent;
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item.active span.lottery-name {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+    opacity: 1;
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li a.single-lottery-item:hover span.lottery-icon {
+    border-color: transparent;
+  }
+
+  .lotteries .part-picking-number .lotteries-selection-menu ul li:last-child a.single-lottery-item {
+    margin-right: 0;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .lotteries-selection-menu ul li:last-child a.single-lottery-item {
+      margin-right: 12px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header {
+    background: linear-gradient(251.22deg, #0C244B 0%, #0B3846 99.53%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 30px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header {
+      padding: 25px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 100%;
+    background: url("../../../../assets/img/lottery/lottery-header-left-bg.png") left center no-repeat;
+    background-size: cover;
+    z-index: -2;
+  }
+
+  .lotteries .part-picking-number .picking-number-header:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 748px;
+    height: 100%;
+    background: url("../../../../assets/img/lottery/lottery-header-right-overlay.png") right center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-header:before {
+      width: 100%;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .lottery-bg-img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    opacity: 0.1;
+    max-width: none;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info {
+      margin-bottom: 30px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-img {
+    margin-right: 30px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-img {
+      margin-right: 20px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-img img {
+    width: 90px;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-img img {
+      width: 71px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-img img {
+      width: 55px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span {
+    display: block;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.lottery-name {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-top: -11px;
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.lottery-name {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.lottery-name {
+      margin-bottom: 3px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.lottery-name {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.estimate-prize {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #E7EDEF;
+    text-transform: capitalize;
+    margin-bottom: -7px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.estimate-prize {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.estimate-prize span {
+    display: inline-block;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    line-height: 44px;
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+    -webkit-box-shadow: 0px 9px 37px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 9px 37px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0 35px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    margin-right: 20px;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link:after {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #0D3B54;
+    z-index: -1;
+    border-radius: 50px;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link {
+      padding: 0 25px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link {
+      padding: 0 20px;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link {
+      width: 90%;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link i {
+    margin-left: 2px;
+    font-size: 15.5px;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link:hover:after {
+    opacity: 1;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item button.nav-link.active:after {
+    opacity: 0;
+  }
+
+  .lotteries .part-picking-number .picking-number-header .part-lottery-function-btn .nav-pills .nav-item:last-child button.nav-link {
+    margin-right: 0;
+  }
+
+  .lotteries .part-picking-number .picking-number-body {
+    -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 40px;
+    background: #fff;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body {
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body {
+      padding: 30px 20px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate {
+      display: block;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px solid #B6C2C8;
+    border-radius: 10px;
+    padding: 19px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box {
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(13, 59, 84, 0.5);
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #3D6276;
+    font-weight: 500;
+    margin: 11px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number {
+      margin: 8px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number.selected {
+    background: linear-gradient(317.37deg, #1F556B 2.76%, #1C798E 63.36%);
+    -webkit-box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box button.single-number.selected.special {
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box.common {
+    margin-right: 18px;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box.common {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box.special {
+    margin-left: 18px;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-palate .number-box.special {
+      margin-left: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid #B6C2C8;
+    border-radius: 10px;
+    padding: 40px 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result {
+      position: relative;
+      padding: 30px;
+      padding-top: 76px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result {
+      display: block;
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title {
+      position: absolute;
+      top: 21px;
+      left: 30px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title {
+      position: unset;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: rgba(13, 59, 84, 0.8);
+    position: relative;
+    margin-bottom: 0;
+    padding-right: 124px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title {
+      padding-right: 104px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title:after {
+    content: "";
+    background: url("../../../../assets/img/lottery/arrow-shape.png") center center no-repeat;
+    background-size: contain;
+    width: 114px;
+    height: 89px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title:after {
+      width: 94px;
+      height: 69px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .part-title h3.title:after {
+      display: none;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -10px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate {
+      margin: 0 -7px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate button.single-number {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(13, 59, 84, 0.5);
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #3D6276;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate button.single-number {
+      margin: 0 7px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate button.single-number {
+      width: 40px;
+      height: 40px;
+      margin: 8px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate button.single-number.selected {
+    background: linear-gradient(317.37deg, #1F556B 2.76%, #1C798E 63.36%);
+    -webkit-box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .result-number-palate button.single-number.selected.special {
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons {
+      margin-top: 30px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons {
+      margin-top: 22px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button {
+    border: 1px solid #B6C2C8;
+    background: none;
+    font-weight: 500;
+    height: 45px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.8);
+    padding: 0 25px;
+    border-radius: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button:active {
+    color: rgba(237, 130, 56, 0.8);
+    border: 1px solid rgba(237, 130, 56, 0.6);
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button {
+      padding: 0 20px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button i {
+    margin-left: 10px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button.auto-select-btn {
+    margin-left: 20px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button.auto-select-btn {
+      margin-left: 10px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-result .picking-number-quick-buttons button.auto-select-btn i {
+    font-size: 14px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step {
+      display: block;
+      text-align: center;
+      margin-top: 23px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text {
+    margin: -8px 0;
+    padding-left: 20px;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text {
+      padding-left: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text p {
+    max-width: 582px;
+    letter-spacing: 0.01em;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(13, 59, 84, 0.7);
+    margin-bottom: -2px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text p span.b-txt {
+    font-weight: 700;
+    color: rgba(13, 59, 84, 0.8);
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text p {
+      max-width: 100%;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text p br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-text p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 22px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .picking-number-final-step .part-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners h4.lottery-winners-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #3D6276;
+    letter-spacing: 0.01em;
+    margin: -9px 0 22px;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners h4.lottery-winners-title {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners h4.lottery-winners-title {
+      font-size: 22px;
+      line-height: 32px;
+      margin: -9px 0 12px;
+      text-align: center;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #B6C2C8;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner {
+      display: block;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner {
+      display: block;
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner {
+      padding: 30px 20px 24px;
+      text-align: center;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img {
+    border-radius: 50%;
+    width: 100px;
+    overflow: hidden;
+    height: 100px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img {
+      margin-bottom: 24px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img {
+      margin-bottom: 24px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img {
+      display: inline-block;
+      margin-bottom: 17px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-img img {
+    width: 100%;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text {
+    margin-left: 40px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text {
+      margin-left: 30px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text {
+      margin-left: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: rgb(61, 98, 118);
+    margin: 0 0 6px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text p span.user-name {
+    font-weight: 500;
+    background: linear-gradient(223.14deg, #D3471A -17.3%, #988B17 101.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 17px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats {
+    padding-left: 18px;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats {
+      text-align: left;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: -webkit-linear-gradient(317.37deg, #114065 2.76%, #18687A 63.36%);
+    border-radius: 50%;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats:after {
+      top: 8px;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats span.ps-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #557587;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats span.ps-title {
+      font-weight: 500;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text ul li.plaing-stats span.ps-descr {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    background: linear-gradient(223.14deg, #D3471A -17.3%, #988B17 101.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    color: #3D6276;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number:last-child {
+    margin-right: 0;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number.selected {
+    border: 1px solid rgba(61, 98, 118, 0.7);
+    color: rgba(13, 59, 84, 0.8);
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number.selected.special {
+    border: none;
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+    position: relative;
+    z-index: 2;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number.selected.special:after {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .single-winner .part-text .winning-number span.single-number {
+      margin-right: 0;
+      margin: 5px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .part-btn {
+    text-align: right;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .part-btn {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-winners .part-btn {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text h4.title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #3D6276;
+    letter-spacing: 0.01em;
+    margin: -10px 0 13px;
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text h4.title {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text h4.title {
+      margin-top: -8px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text h4.title {
+      font-size: 22px;
+      line-height: 32px;
+      margin-top: -9px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text p {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(13, 59, 84, 0.8);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-family: "Roboto", sans-serif;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text p {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text:last-child {
+    margin-bottom: -27px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .part-text:last-child {
+      margin-bottom: -25px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 29px 0 40px;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem {
+      margin: 19px 0 31px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem {
+      margin: 21px 0 31px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info,
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number {
+    border: 1px solid #BFCACF;
+    border-radius: 10px;
+    padding: 40px;
+    padding-bottom: 33px;
+  }
+
+  @media (max-width: 767.98px) {
+
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info,
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number {
+      padding: 30px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info {
+      margin-bottom: 30px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info {
+      display: block;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info {
+      padding: 25px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat {
+    margin-right: 110px;
+  }
+
+  @media (max-width: 1399.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat {
+      margin-right: 70px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat {
+      margin-right: 60px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat:nth-child(2) {
+      margin-bottom: 23px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat h5.title {
+    color: rgba(13, 59, 84, 0.8);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 14px;
+    margin-top: -9px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat h5.title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr {
+      margin-top: 12px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr span.cn-flag {
+    width: 40px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr span.cn-flag {
+      width: 35px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr span.cn-flag img {
+    width: 100%;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr span.stats-txt {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.7);
+    text-transform: capitalize;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat .country-descr span.stats-txt {
+      margin-left: 10px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat ul.stats-descr {
+      margin-bottom: -7px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat ul.stats-descr li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.7);
+    text-transform: capitalize;
+    padding-bottom: 4px;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat ul.stats-descr li:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .part-info .single-stat ul.stats-descr li {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number {
+      display: inline-block;
+      padding-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number {
+      display: block;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number {
+      padding: 25px;
+      padding-bottom: 17px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-bottom: 10px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header h5.title {
+    color: rgba(13, 59, 84, 0.7);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 23px;
+    margin-top: -9px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header h5.title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: -9px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection {
+    margin-top: -9px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection {
+      margin-top: -6px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-toggle {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.7);
+    text-transform: capitalize;
+    padding: 0;
+    padding-right: 20px;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-toggle {
+      font-size: 15px;
+      line-height: 25px;
+      padding-right: 15px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-toggle:after {
+    content: "\f0dd";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    border: none;
+    vertical-align: 0;
+    margin-left: 0;
+    position: absolute;
+    top: -2px;
+    font-size: 16px;
+    right: 0;
+    color: #C4C4C4;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-toggle:after {
+      top: -3px;
+      font-size: 13px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-menu .dropdown-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgba(13, 59, 84, 0.7);
+    text-transform: capitalize;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-header .date-selection .dropdown .dropdown-menu .dropdown-item:active {
+    background: -webkit-linear-gradient(317.37deg, #114065 2.76%, #18687A 63.36%);
+    color: #fff;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-left: -8px;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+    border-radius: 50%;
+    background: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #3D6276;
+    font-weight: 500;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 12px;
+    height: 1px;
+    opacity: 0.5;
+    background: #0D3B54;
+    top: calc(100% + 7px);
+  }
+
+  @media (max-width: 1199.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number:after {
+      display: none;
+    }
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number:last-child {
+    margin-right: 0;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number.selected {
+    background: linear-gradient(317.37deg, #1F556B 2.76%, #1C798E 63.36%);
+    -webkit-box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    box-shadow: 0px 7px 9px rgba(29, 122, 143, 0.25);
+    color: #fff;
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number.selected.special {
+    background: linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+  }
+
+  .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number.selected.special:after {
+    background: -webkit-linear-gradient(223.14deg, #F44A33 -17.3%, #E8AE3D 101.56%);
+  }
+
+  @media (max-width: 479.98px) {
+    .lotteries .part-picking-number .picking-number-body .tab-content .tab-pane .lottery-info .middle-part-elem .latest-winning-number .lwn-number-palate span.single-number {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin-right: 0;
+      margin: 8px;
+    }
+  }

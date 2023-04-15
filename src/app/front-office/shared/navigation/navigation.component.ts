@@ -31,10 +31,12 @@ export class NavigationComponent implements OnInit {
   setFrLang() {
     this.translationService.setLanguage('fr');
   }
-
   
   navigateToHome() {
     this.router.navigate(['/front']);
+    setTimeout(()=>{
+      location.reload();
+    }, 10)
   }
 
   navigateToBlog() {
@@ -51,6 +53,10 @@ export class NavigationComponent implements OnInit {
 
   navigateToLogin() {
     this.router.navigate(['/auth/login']);
+  }
+
+  navigateToFaq() {
+    this.router.navigate(['/front/faq']);
   }
 
   navigateToRegister() {

@@ -28,9 +28,7 @@ import { CommentsComponent } from './front-office/sections/comments/comments.com
 import { FontactFormComponent } from './front-office/sections/contact-form/contact.form.component';
 import { RecomArticlesComponent } from './front-office/sections/recom-articles/recom.articles.component';
 import { SubscriptionComponent } from './front-office/sections/subscription/subscription.component';
-import { promotionsComponent } from './front-office/sections/promotions/promotions.component';
 import { ConnexionComponent } from './front-office/sections/connexion/connexion.component';
-import { ProgressIndeterminateModule } from './front-office/shared/progress-indeterminate/progress-indeterminate.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { SignupComponent } from './front-office/pages/authentification/signup/signup.component';
@@ -39,6 +37,19 @@ import { NewPwdComponent } from './front-office/pages/authentification/new-pwd/n
 import { MailLinkComponent } from './front-office/pages/authentification/mail-link/mail-link/mail-link.component';
 import { LinkRecieveComponent } from './front-office/pages/authentification/mail-link/link-recieve/link-recieve.component';
 import { ForgotPwdComponent } from './front-office/pages/authentification/forgot-pwd/forgot-pwd.component';
+import { DataTablesModule } from 'angular-datatables';
+import { AllModulesService } from './services/all-modules.service';
+import { AuthenticationGuard } from './services/guard/auth/authentication.guard';
+import { TestimonialComponent } from './front-office/sections/testimonial/testimonial.component';
+import { BestComponent } from './front-office/sections/best/best.component';
+import { HowItWorkComponent } from './front-office/sections/how-it-work/how-it-work.component';
+import { AboutUsComponent } from './front-office/sections/about-us/about-us.component';
+import { QueryComponent } from './front-office/sections/query/query.component';
+import { AuthorityComponent } from './front-office/sections/authority/authority.component';
+import { ProgressIndeterminateModule } from './front-office/shared/progress-indeterminate/progress-indeterminate.module';
+import { LottoDemoModule } from './front-office/sections/lotto-demo/lotto-demo.module';
+import { LottoModule } from './front-office/sections/lotto/lotto.module';
+import { LottoListModule } from './front-office/sections/lotto-list/lotto-list.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -75,13 +86,19 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavigationComponent,
 
     // Sections
-    promotionsComponent,
     CommentsComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    TestimonialComponent,
+    BestComponent,
+    HowItWorkComponent,
+    AboutUsComponent,
+    QueryComponent,
+    AuthorityComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
+    LottoDemoModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -89,6 +106,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     AuthentificationModule,
     ProgressIndeterminateModule,
+    DataTablesModule,
+    LottoModule,
+    LottoListModule,
     ToastrModule.forRoot({
       positionClass :'toast-bottom-right'
     }),
@@ -101,6 +121,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ],
   providers: [
+    AllModulesService,
+    AuthenticationGuard,
     TranslationService],
   bootstrap: [AppComponent],
   exports: [

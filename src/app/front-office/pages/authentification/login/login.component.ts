@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { AuthService } from 'src/app/services/auth/auth.service';
@@ -31,7 +32,12 @@ export class LoginComponent implements OnInit {
     private authService: AuthService,
     private translate: TranslateService,
     public translationService: TranslationService,
+    private router: Router
     ) {
+      if (localStorage.getItem('access-token') && localStorage.getItem('user-data')) {
+        this.router.navigateByUrl('/index');
+      } 
+
       this.lang = this.translationService.initLanguage();
       translate.onLangChange.subscribe((event: LangChangeEvent) =>
       {
@@ -47,6 +53,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.scrollToTop();
     this.translate.use(this.translationService.getLanguage());
     this.storage.Checkuser();
     this.translate.use(this.translationService.getLanguage());
@@ -67,6 +74,10 @@ export class LoginComponent implements OnInit {
     return this.form.controls;
   }
 
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
+  
   submit() {
     // stop here if form is invalid
     if (this.form.invalid) {

@@ -37,7 +37,11 @@ export class NewPwdComponent implements OnInit {
     private translate: TranslateService,
     public translationService: TranslationService
   ) {
-    if(localStorage.getItem('pwd_token_datas')){
+    if (localStorage.getItem('access-token') && localStorage.getItem('user-data')) {
+      this.router.navigateByUrl('/index');
+    }
+
+    if (localStorage.getItem('pwd_token_datas')) {
       this.storageToken = localStorage.getItem('pwd_token_datas')
       localStorage.removeItem('pwd_token_datas');
     } else {
@@ -73,18 +77,18 @@ export class NewPwdComponent implements OnInit {
       ],
       'confirm_password': ['', Validators.required]
     },
-    {validator: this.checkIfMatchingPasswords('field_password', 'confirm_password')});
+      { validator: this.checkIfMatchingPasswords('field_password', 'confirm_password') });
   }
 
   checkIfMatchingPasswords(passwordKey: string, passwordConfirmationKey: string) {
     return (group: FormGroup) => {
       let passwordInput = group.controls[passwordKey],
-          passwordConfirmationInput = group.controls[passwordConfirmationKey];
+        passwordConfirmationInput = group.controls[passwordConfirmationKey];
       if (passwordInput.value !== passwordConfirmationInput.value) {
-        return passwordConfirmationInput.setErrors({notEquivalent: true})
+        return passwordConfirmationInput.setErrors({ notEquivalent: true })
       }
-      else {  
-          return passwordConfirmationInput.setErrors(null);
+      else {
+        return passwordConfirmationInput.setErrors(null);
       }
     }
   }

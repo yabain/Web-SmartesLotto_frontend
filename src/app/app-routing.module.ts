@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationGuard } from './services/guard/auth/authentication.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'front', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
       import('./front-office/pages/authentification/authentification.module').then(
         (m) => m.AuthentificationModule
       ),
+      // canActivate: [AuthenticationGuard],
   },
   {
     path: 'mail',
@@ -28,7 +30,29 @@ const routes: Routes = [
         './front-office/pages/authentification/mail-link/mail-link.module'
       ).then((m) => m.MailLinkModule),
   },
-  { path: '**', redirectTo: 'front', pathMatch: 'full' },
+  {
+    path: 'invoice-reports',
+    loadChildren: () =>
+      import('./back-office/all-modules/invoice-reports/invoice-reports.module').then(
+        (m) => m.InvoiceReportsModule
+      ),
+    canActivate: [AuthenticationGuard],
+  },
+  {
+    path: 'lotteries',
+    loadChildren: () =>
+      import('./back-office/all-modules/lotteries/lotteries.module').then(
+        (m) => m.LotteriesModule
+      ),
+    canActivate: [AuthenticationGuard],
+  },
+  {
+    path: 'index',
+    loadChildren: () =>
+      import('./back-office/all-modules/all-modules.module').then(m => m.AllModulesModule),
+    canActivate: [AuthenticationGuard],
+  },
+  { path: '**', redirectTo: 'index', pathMatch: 'full' },
 
 ];
 

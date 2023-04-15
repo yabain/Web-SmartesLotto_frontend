@@ -98,20 +98,10 @@
     "selectCity": "Select your city",
     "countryRequired": "Your country is required.",
     "cityRequired": "Your city is required.",
-    "user": {
-        "firstName": "First Name",
-        "lastName": "Last Name",
-        "email": "Email",
-        "contact": "Contact",
-        "password": "Password",
-        "emailAdress": "Email adresse",
-        "zip": "ZIP code",
-        "location": "City",
-        "country": "Country",
-        "creationDate": "Creation date"
-    },
-
-
+    "playLotto": "Play lotto",
+    "seeMore": "Explore more",
+    "contactUs": "Contact us",
+    "ifQuery": "If you have any query about lottery or anything!",
     "home": "Home",
     "french": "French",
     "blog": "Blog",
@@ -126,5 +116,100 @@
     "to": "to",
     "welcome": "Welcome",
     "emailResetSended": "A verification email has been sent to your email",
-    "seeSpam": "Vérifiez également dans vos 'SPAM'. Si vous ne l'avez pas reçu, cliquez sur Renvoyer."
+    "seeSpam": "Vérifiez également dans vos 'SPAM'. Si vous ne l'avez pas reçu, cliquez sur Renvoyer.",
+    "connectPickup": "Sign in and pick lucky number with just one click.",
+    "faq": "FAQ",
+    "user": {
+        "addressLine": "Address Line",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "contact": "Contact",
+        "password": "Password",
+        "emailAdress": "Email adresse",
+        "zip": "ZIP code",
+        "location": "City",
+        "country": "Country",
+        "creationDate": "Creation date"
+    },
+    "testimonials": {
+        "userTestimonial": "Before it was all random, have fun predicting your numbers that the SmartestLotto AI generates. It's amazing!",
+        "testimonials": "Testimonials",
+        "userFeedback": "Users’s valuable feedback"
+    },
+    "whyWeAreBest": {
+        "whyWeAreBest": "Why we are best",
+        "weAreProud": "We are proud to provide best services to our clients",
+        "sslSecLayer": "SSL security layer",
+        "sslSecLayerContent": "It's the standard technology for keeping an internet connection secure and safeguarding any sensitive.",
+        "quickNotif": "Quick Notifications",
+        "quickNotifContent": "When you’ve successfully matched enough numbers to win a prize, we notify you via email and/or SMS",
+        "noLostTickets": "No Lost Tickets",
+        "noLostTicketsContent": "Here is a brilliant brief description of this title with precise and concise elements.",
+        "noLongLines": "No Long Lines",
+        "noLongLinesContent": "Here is a brilliant brief description of this title with precise and concise elements.",
+        "securePay": "Secure Payments",
+        "securePayContent": "Here is a brilliant brief description of this title with precise and concise elements.",
+        "friendlySupport": "24/7 friendly support",
+        "friendlySupportContent": "Here is a brilliant brief description of this title with precise and concise elements."
+    },
+    "howItWork": {
+        "howItWork": "How it works",
+        "howItWorkContent": "easiest way to picking a number",
+        "setBudget": "Set a budget.",
+        "setBudgetContent": "Playing the lottery is gambling, so keep it fun by treating it as part of your entertainment budget.",
+        "chooseLotto": "Choose your lottery.",
+        "chooseLottoContent": "There are 5 exciting draw-based jackpot you can try one or all of them. like powerball etc.",
+        "pickNumb": "Pick your numbers.",
+        "pickNumbComment": "Let the artificial intelligence do all the work for you.",
+        "checkNumb": "Check your numbers.",
+        "checkNumbContent": "If you are a winner, claim your prize: be sure to visit a retailer before your prize expires in 12 months."
+    },
+    "footer": {
+        "footerContent": "Lottery players can play French Lottery games online from anywhere in France on a phone, tablet or computer.",
+        "copyright": "Copyright 2023 SmartestLotto. All rights reserved.",
+        "policy": "Policy",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "content": "Lottery players can play French Lottery games online from anywhere in France on a phone, tablet or computer."
+    },
+    "aboutUs": {
+        "subTitle": "We Offer a Wide Variety of Lotteries",
+        "about": "About Us",
+        "aboutTitle": "We provide the best forecasts.",
+        "content1": "We are a French company at the service of digital development which has set up a lotto forecasting platform thanks to a state-of-the-art artificial intelligence",
+        "content2": "Easy",
+        "content3": "Soft",
+        "content4": "Secure",
+        "knowMore": "Know more",
+        "players": "Players",
+        "jackpot": "Jackpot",
+        "lotteries": "Lotteries"
+    },
+    "lottoDemo": {
+        "allLotto": "All lotteries",
+        "pickLucky": "pick your lucky number",
+        "note": "Note",
+        "selectNum": "Select number",
+        "clear": "Clear",
+        "winners": "Winners",
+        "autoSelect": "Auto select",
+        "pay": "Continue to cart",
+        "prizes": "Prizes",
+        "info": "Infos",
+        "mostWinners": "Most recent Winners",
+        "topWinner": "All time top winners",
+        "estimePrize": "Estimated prize",
+        "pick6Num": "Pick any 6 numbers",
+        "noteContent": "The problem of the compensation of the harmonics, has been understood by the IAs. Hundreds of times, until they used safe probabilities."
+    },
+    "blogPost": {
+        "title": "blog posts",
+        "subTitle": "Get Lottery News & Lottery Winner Stories"
+    },
+    "lottoList": {
+        "title" : "Lotto",
+        "subTitle" : "Lottery list",
+        "discover": "Diescover now"
+    }
 }

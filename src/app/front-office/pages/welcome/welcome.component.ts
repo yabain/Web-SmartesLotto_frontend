@@ -19,10 +19,18 @@ export class WelcomeComponent implements OnInit {
     public translationService: TranslationService,
     private router: Router,
     ) {
+      if (localStorage.getItem('access-token') && localStorage.getItem('user-data')) {
+        this.router.navigateByUrl('/index');
+      } 
   }
 
   ngOnInit() {
+    this.scrollToTop();
     this.translate.use(this.translationService.getLanguage());
+  }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 
 }

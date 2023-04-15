@@ -31,7 +31,8 @@
               "./src/assets/css/animate.min.css",
               "./src/assets/css/all.min.css",
               "./src/assets/css/owl.carousel.min.css",
-              "./src/assets/css/style.css",
+              "./src/assets/css/style2.scss",
+              "./src/assets/css/style.scss",
               
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css",
@@ -126,15 +127,14 @@
                 }
               ]
             }
-            
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "dev": {
-              "browserTarget": "smarteslotto:build:development"
+              "browserTarget": "smarteslotto:build:dev"
             },
             "test": {
               "browserTarget": "smarteslotto:build:test"
@@ -146,7 +146,7 @@
               "browserTarget": "smarteslotto:build:production"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

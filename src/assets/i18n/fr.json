@@ -54,7 +54,7 @@
     "activities": "Activités",
     "profileCompletion": "Complétion de profil",
     "edit": "Modifier",
-    "about": "A propos",
+    "about": "A_propos",
     "adress": "Adresse",
     "at": "à",
     "save": "Enregistrer",
@@ -98,21 +98,10 @@
     "selectCity": "Votre ville",
     "countryRequired": "Votre pays est requis.",
     "cityRequired": "Votre ville est requis.",
-    "user": {
-        "firstName": "Nom",
-        "lastName": "Prénom",
-        "email": "Email",
-        "password": "Mot de passe",
-        "emailAdress": "Adresse email",
-        "contact": "Contact",
-        "zip": "Boîte postale",
-        "location": "Ville",
-        "country": "Pays",
-        "creationDate": "Date de création",
-        "darkTheme": "Theme sombre"
-    },
-
-
+    "seeMore": "Découvrir",
+    "playLotto": "Commencer",
+    "contactUs": "Contactez-nous",
+    "ifQuery": "Si vous avez des questions à propos de la loterie ou de quoi que ce soit d'autre!",
     "home": "Acceuil",
     "french": "Français",
     "blog": "Blog",
@@ -127,5 +116,101 @@
     "to": "sur",
     "welcome": "Bienvenue",
     "emailResetSended": "Un mail de vérification a été envoyé à votre adresse email",
-    "seeSpam": "Also check your 'SPAM'. If you did not receive it, click on Resend"
+    "seeSpam": "Vérifiez également vos 'SPAM'. Si vous ne l'avez pas reçu, cliquez sur Renvoyer.",
+    "connectPickup": "Connectez-vous et choisissez les numéros chance en un seul clic.",
+    "faq": "QFP",
+    "user": {
+        "addressLine": "Addresse",
+        "firstName": "Nom",
+        "lastName": "Prénom",
+        "email": "Email",
+        "password": "Mot de passe",
+        "emailAdress": "Adresse email",
+        "contact": "Contact",
+        "zip": "Boîte postale",
+        "location": "Ville",
+        "country": "Pays",
+        "creationDate": "Date de création",
+        "darkTheme": "Theme sombre"
+    },
+    "testimonials": {
+        "userTestimonial": "Avant tout était dû au hasard, amusez-vous à prédire vos numéros que l'IA de SmartestLotto génère. C'est incroyable!",
+        "testimonials": "Temoignages",
+        "userFeedback": "Feedbacks utilisateurs"
+    },
+    "whyWeAreBest": {
+        "whyWeAreBest": "Pourquoi nous sommes les meilleurs",
+        "weAreProud": "Nous sommes fiers de fournir les meilleurs services à nos clients",
+        "sslSecLayer": "Couche de sécurité SSL",
+        "sslSecLayerContent": "Il s'agit de la technologie standard permettant de sécuriser une connexion internet et de protéger les données sensibles,",
+        "quickNotif": "Notifications rapides",
+        "quickNotifContent": "Lorsque vous avez réussi à faire correspondre suffisamment de numéros pour gagner un prix, nous vous en informons par e-mail et/ou par SMS",
+        "noLostTickets": "Pas de billets perdus",
+        "noLostTicketsContent": "Ici une brillante description brève de ce titre avec des éléments précis et concis.",
+        "noLongLines": "Pas de longues files d'attente",
+        "noLongLinesContent": "Ici une brillante description brève de ce titre avec des éléments précis et concis.",
+        "securePay": "Paiements sécurisés",
+        "securePayContent": "Ici une brillante description brève de ce titre avec des éléments précis et concis.",
+        "friendlySupport": "Assistance amicale 24 heures sur 24, 7 jours sur 7",
+        "friendlySupportContent": "Ici une brillante description brève de ce titre avec des éléments précis et concis."
+    },
+    "howItWork": {
+        "howItWork": "Comment ça marche",
+        "howItWorkContent": "La façon la plus simple d'avoir des chiffres",
+        "setBudget": "Définir un budget",
+        "setBudgetContent": "Jouer à la loterie est un jeu de hasard, alors gardez le plaisir en le considérant comme faisant partie de votre budget de divertissement.",
+        "chooseLotto": "Choisissez votre loterie",
+        "chooseLottoContent": "Il y a 5 jackpots passionnants basés sur des tirages, vous pouvez essayer l'un d'entre eux ou tous. comme le powerball etc",
+        "pickNumb": "Choisissez vos numéros",
+        "pickNumbComment": "Laissez l'intelligence artificielle faire tout le travail à votre place",
+        "checkNumb": "Vérifiez vos chiffres",
+        "checkNumbContent": "Si vous êtes gagnant, réclamez votre prix : assurez-vous de vous rendre chez un détaillant avant que votre prix n'expire dans 12 mois."
+    },
+    "footer": {
+        "footerContent": "Lottery players can play French Lottery games online from anywhere in France on a phone, tablet or computer.",
+        "copyright": "Copyright 2023 SmartestLotto. Tous droits réservés.",
+        "policy": "Politiques",
+        "privacy": "Confidentialité",
+        "terms": "Terms",
+        "content": "Les joueurs de loterie peuvent jouer aux jeux de la Loterie française en ligne depuis n'importe quel endroit en France sur un téléphone, une tablette ou un ordinateur."
+    },
+    "aboutUs": {
+        "subTitle": "Nous proposons une grande variété de loteries",
+        "about": "A propos",
+        "aboutTitle": "Nous fournissons les meilleur prévisions",
+        "content1": "Nous sommes une entreprise française au service du développement numérique qui a mise sur pieds une plateforme de prévisions loto grâce à une intelligence artificielle de pointe.",
+        "content2": "Facile",
+        "content3": "Pratique",
+        "content4": "Sécurisée",
+        "knowMore": "En savoir plus",
+        "players": "Joueurs",
+        "jackpot": "Jackpot",
+        "lotteries": "Lotteries"
+    },
+    "lottoDemo": {
+        "allLotto": "Toutes les loteries",
+        "pickLucky": "Choisissez vos numéro chance",
+        "note": "Note",
+        "selectNum": "Choisir des nombres",
+        "clear": "Effacer",
+        "winners": "Gagnants",
+        "autoSelect": "selection auto",
+        "pay": "Envoyer au panier",
+        "prizes": "Prix",
+        "info": "Infos",
+        "mostWinners": "Les plus récents gagnants",
+        "topWinner": "Les grands gagnants de tous les temps",
+        "estimePrize": "Prix estimé",
+        "pick6Num": "Choisissez 6 numéros",
+        "noteContent": "Le problème de la compensation des harmoniques, a été compris par les IAs. Des entrainements centaines de fois, jusqu'à ce qu'elles ont employées des probabilités sûr."
+    },
+    "blogPost": {
+        "title" : "articles de blog",
+        "subTitle" : "Les nouvelles de la loterie"
+    },
+    "lottoList": {
+        "title" : "Lotto",
+        "subTitle" : "Loteries disponibles",
+        "discover": "Découvrir"
+    }
 }

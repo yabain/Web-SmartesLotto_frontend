@@ -289,7 +289,7 @@ Version      : 1.0
     $(document).on("click",".add-links",function () {
 		var experiencecontent = '<div class="links-cont">' +
 			'<div class="service-amount">' +
-				'<a href="javascript:void(0);" class="service-trash"><i class="fe fe-minus-circle me-1"></i>Service Charge</a> <span>$ 4</span' +
+				'<a href="javascript:void(0);" class="service-trash"><i class="fe fe-minus-circle me-1"></i>Service Charge</a> <span>€ 4</span' +
 			'</div>' +
 		'</div>';
 
@@ -305,9 +305,10 @@ Version      : 1.0
     $(document).on("click",".add-links-one",function () {
 		var experiencecontent = '<div class="links-cont-discount">' +
 			'<div class="service-amount">' +
-				'<a href="javascript:void(0);" class="service-trash-one"><i class="fe fe-minus-circle me-1"></i>Offer new</a> <span>$ 4 %</span' +
+				'<a href="javascript:void(0);" class="service-trash-one"><i class="fe fe-minus-circle me-1"></i>Offer new</a> <span>€ 4 %</span' +
 			'</div>' +
-		'</div>';
+		'</div>'
+		;
 
         $(".links-info-discount").append(experiencecontent);
         return false;

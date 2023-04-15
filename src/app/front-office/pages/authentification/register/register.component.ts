@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { WebStorage } from 'src/app/services/storage/web.storage';
@@ -26,7 +27,12 @@ export class RegisterComponent implements OnInit {
     private translate: TranslateService,
     public translationService: TranslationService,
     private storage: WebStorage,
+    private router: Router
     ) {
+      if (localStorage.getItem('access-token') && localStorage.getItem('user-data')) {
+        this.router.navigateByUrl('/index');
+      } 
+      
       this.lang = this.translationService.initLanguage();
       
       if (this.lang == 'en'){

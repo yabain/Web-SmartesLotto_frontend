@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { AuthService } from 'src/app/services/auth/auth.service';
@@ -33,8 +34,12 @@ export class ForgotPwdComponent implements OnInit {
     private formLog: FormBuilder,
     private authService: AuthService,
     private translate: TranslateService,
-    public translationService: TranslationService
+    public translationService: TranslationService,
+    private router: Router
     ) {
+      if (localStorage.getItem('access-token') && localStorage.getItem('user-data')) {
+        this.router.navigateByUrl('/index');
+      } 
       //this is to determine the text direction depending on the selected language
       translate.onLangChange.subscribe((event: LangChangeEvent) =>
       {
@@ -49,6 +54,7 @@ export class ForgotPwdComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.scrollToTop();
     this.waitingResponse = false;
     this.error = false;
 
@@ -63,6 +69,7 @@ export class ForgotPwdComponent implements OnInit {
   }
 
   submit() {
+    this.scrollToTop();
 
     // stop here if form is invalid
     if (this.form.invalid) {
@@ -93,5 +100,8 @@ export class ForgotPwdComponent implements OnInit {
   }
   iconLogle(){
     this.Toggledata = !this.Toggledata
+  }
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 }

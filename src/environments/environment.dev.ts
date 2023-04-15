@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    url: "https://api-dev.smartestlotto.io",
-    urlProd: "https://api-dev.smartestlotto.io"
+    url: "http://api-dev.smartestlotto.io",
+    urlProd: "http://api-dev.smartestlotto.io"
 };

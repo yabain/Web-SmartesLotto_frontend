@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="http://drive.google.com/uc?id=110k1j42iUyhXP1oqXdwMa7a99W-sxFIb" alt="SmartestLotto logo" width="50%" height="50%"/>
+  <img src="http://drive.google.com/uc?id=11S1terSxUJRSJoFN9Kw-3RDwUy4phs3d" alt="SmartestLotto logo" width="50%" height="50%"/>
   <br><br>
   <i><b> SmartestLotto: </b>is a platform that allows users to use an AI for lotto predictions.</i>
   <br>
