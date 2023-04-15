@@ -97,7 +97,7 @@ getUserInformations() {
   * resetPassword is used to reset your password.
   */
   resetPassword() {
-    this.toastr.success('Email Sent');
+    this.toastr.success('Email Sent', 'Success', {timeOut: 5000});
     this.router.navigate(['login']);
   }
 
@@ -181,7 +181,7 @@ getUserInformations() {
 
         if (error) {
           console.log(error);
-          this.toastr.success(error.message);
+          this.toastr.error(error.message, 'Error', {timeOut: 7000});
           reject(error);
         }
       });

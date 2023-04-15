@@ -4,6 +4,7 @@
     "register": "Sign Up",
     "connexion": "Sign In",
     "enterYour": "Enter your ",
+    "enteragainYour": "Enter againe your ",
     "pwdShouldBe": "Ensure that these requirements are met: ",
     "upTo8Char": "Minimum 8 characters long",
     "upTo1Captal": "At least one capital letter",
@@ -21,7 +22,7 @@
     "repeatePwd": "Repeat the password",
     "confirmPwd": "Password Confirmation",
     "connectWith": "Connect with",
-    "createAccount": " Create my account",
+    "createAccount": " Create account",
     "dontHaveAccount": "You do not have an account yet ",
     "emailRequired": "Your email is required.",
     "firstNameRequired": "The first name is required.",
@@ -61,7 +62,7 @@
     "send": "Send",
     "enterEmailForVerification": "Enter your email to receive an account reset link.",
     "mailVerification": "Email address verification",
-    "wait": "Please wait.",
+    "wait": "Please wait",
     "error": "Error",
     "succes": "Success",
     "resend": "Send again",
@@ -123,5 +124,7 @@
     "passionOnlineLotto": "passionate to online lotto",
     "orSW": "or sign in with",
     "to": "to",
-    "welcome": "Welcome"
+    "welcome": "Welcome",
+    "emailResetSended": "A verification email has been sent to your email",
+    "seeSpam": "Vérifiez également dans vos 'SPAM'. Si vous ne l'avez pas reçu, cliquez sur Renvoyer."
 }

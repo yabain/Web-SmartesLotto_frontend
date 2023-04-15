@@ -34,6 +34,11 @@ import { ProgressIndeterminateModule } from './front-office/shared/progress-inde
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { SignupComponent } from './front-office/pages/authentification/signup/signup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewPwdComponent } from './front-office/pages/authentification/new-pwd/new-pwd.component';
+import { MailLinkComponent } from './front-office/pages/authentification/mail-link/mail-link/mail-link.component';
+import { LinkRecieveComponent } from './front-office/pages/authentification/mail-link/link-recieve/link-recieve.component';
+import { ForgotPwdComponent } from './front-office/pages/authentification/forgot-pwd/forgot-pwd.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -60,6 +65,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     SubscriptionComponent,
     FontactFormComponent,
     SignupComponent,
+    NewPwdComponent,
+    MailLinkComponent,
+    LinkRecieveComponent,
+    ForgotPwdComponent,
 
     // shared sections
     FooterComponent,
@@ -73,6 +82,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

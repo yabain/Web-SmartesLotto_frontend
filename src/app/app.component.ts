@@ -8,7 +8,7 @@ import { TranslationService } from './services/translation/language.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'smarteslotto';
+  title = 'smartestlotto';
 
   constructor(
 		public translate: TranslateService,

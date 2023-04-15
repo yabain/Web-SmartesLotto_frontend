@@ -1,0 +1,210 @@
+<!-- header begin -->
+<div class="header">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center">
+                      <div class="logo">
+                          <a href="index.html">
+                              <img src="../../../assets/img/sl_darkBG.png" alt="LOGO" style="width: 200px; height: 40px;">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-6 d-xl-none d-lg-none d-flex justify-content-end">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fa-solid fa-bars"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+              <div class="main-menu">
+                  <nav class="navbar navbar-expand-lg">
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <app-navigation></app-navigation>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-none align-items-center justify-content-end">
+              <app-connexion></app-connexion>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- header end -->
+<!-- breadcrumb begin  -->
+<div class="breadcrumb-pok" style="padding-top: 25px;">
+  <img class="br-shape-left" src="assets/img/breadcrumb/left-bg.png" alt="">
+  <img class="br-shape-right" src="assets/img/breadcrumb/right-bg.png" alt="">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8">
+              <!-- <div class="breadcrumb-content">
+                  <span class="subtitle">Sign In</span>
+                  <h2 class="title">Sign In to enter, if you've an account</h2>
+                  <div class="page-links">
+                      <ul>
+                          <li>
+                              <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                              <span class="current-page">{{ 'connexion' | translate }}</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div> -->
+          </div>
+      </div>
+  </div>
+</div>
+<!-- breadcrumb end  -->
+
+<!-- sign-in begin -->
+<div class="sign-in">
+  <div class="container">
+      <div class="row justify-content-lg-between justify-content-center">
+          <div class="col-xl-5 col-lg-6">
+              <div class="poklotto-form">
+                  <h3 class="title text-center">{{ 'mailVerification' | translate }}</h3>
+                  <div class="part-form">
+                    <div *ngIf="waitingResponse">
+                      <div class="form-group">
+                        <app-progress-indeterminate></app-progress-indeterminate>
+                        <p class="account-subtitle text-center" style="margin-top: 20px;">
+                          {{ 'wait' | translate }}...</p>
+                      </div>
+                    </div>
+                    <div *ngIf="!waitingResponse"><br>
+                      <div  *ngIf="!error" style="background-color: rgba(2, 127, 17, 0.839);
+                      border-radius: 5px;
+                      padding: 5px; color: #fff;
+                      margin-top: 5px"><b>{{ 'success' | translate }}:</b><br> {{msg}}
+        
+                      </div>
+                      <div  *ngIf="error">
+                        <form [formGroup]="form" (ngSubmit)="submit()">
+                          <div class="row">
+                              <!-- <div class="col-xl-12">
+                                  <label for="first_name" class="form-label">First name</label>
+                                  <input type="text" id="first_name" placeholder="Ex: john">
+                              </div> -->
+                              <div class="col-xl-12">
+                                  <label for="mail_address" class="form-label" style="margin-top: 0;">{{
+                                      'user.emailAdress' | translate }}</label>
+                                  <input type="email" class="form-control" formControlName="field_email"
+                                      placeholder="{{ 'enterYour' | translate }}{{ 'user.email' | translate }}"
+                                      id="field_email" [ngClass]="{
+                                    'is-invalid': f['field_email'].touched && f['field_email'].invalid
+                                  }">
+                                  <div class="invalid-feedback" *ngIf="CustomControler?.status === 'email'">
+                                      {{ CustomControler.message }}
+                                  </div>
+                                  <div *ngIf="f['field_email'].touched && f['field_email'].invalid"
+                                      class="invalid-feedback">
+                                      <div *ngIf="f['field_email'].errors && f['field_email'].errors['required']">
+                                          {{ 'emailRequired' | translate }}
+                                      </div>
+                                      <div *ngIf="f['field_email'].errors && f['field_email'].errors['field_email']">
+                                          {{ 'enterValidEmail' | translate }}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="part-submit">
+                              <!-- <button [disabled]="form.invalid" *ngIf="!waitingResponse" class="btn btn-lg btn-block btn-primary w-100 btn-pok" type="submit">
+                                  {{ 'connexion' | translate }}<i class="fa-solid fa-angle-right"></i>
+                              </button> -->
+
+
+                              <div *ngIf="!waitingResponse">
+                                  <br>
+                                  <button *ngIf="sended" [disabled]="form.invalid"
+                                      class="btn btn-lg btn-block btn-primary w-100 btn-pok" type="submit">
+                                      {{ 'resend' | translate }} <i class="fa-solid fa-angle-right"></i>
+                                  </button>
+                              </div>
+                              <div *ngIf="!sended">
+                                  <button *ngIf="!waitingResponse" [disabled]="form.invalid"
+                                      class="btn btn-lg btn-block btn-primary w-100 btn-pok" type="submit">
+                                      {{ 'send' | translate }} <i class="fa-solid fa-angle-right"></i>
+                                  </button>
+                              </div>
+                              <div *ngIf="waitingResponse">
+                                  <app-progress-indeterminate></app-progress-indeterminate>
+                              </div>
+
+
+                          </div>
+                          <br>
+                          <p>{{ 'dontHaveAccount' | translate }}?
+                              <a [routerLink]="'/register'" class="reg-link">{{ 'createAccount' | translate
+                                  }}</a>.
+                          </p>
+                      </form>
+                        
+
+
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-8 col-sm-10 d-xl-flex d-lg-flex d-block align-items-center">
+              <div class="part-right">
+                  <div class="part-img">
+                      <img src="assets/img/sign-in/sign-in-img.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- header begin -->
+<div class="header">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+              <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center">
+                      <div class="logo">
+                          <a href="index.html">
+                              <img src="../../../assets/img/sl_darkBG.png" alt="LOGO"
+                                  style="width: 200px; height: 40px;">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-6 d-xl-none d-lg-none d-flex justify-content-end">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fa-solid fa-bars"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-6 col-lg-6">
+              <div class="main-menu">
+                  <nav class="navbar navbar-expand-lg">
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <app-navigation></app-navigation>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-none align-items-center justify-content-end">
+              <app-connexion></app-connexion>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- header end -->
+
+<!-- footer begin -->
+<app-footer></app-footer>

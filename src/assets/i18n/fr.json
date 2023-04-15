@@ -3,7 +3,8 @@
     "currency": "Monaie",
     "register": "S'enrégistrer",
     "connexion": "Se connecter",
-    "enterYour": "Entrer votre ",
+    "enterYour": "Entrez votre ",
+    "enteragainYour": "Entrez à nouveau votre ",
     "pwdShouldBe": "Votre mot de passe doit contenir ",
     "upTo8Char": "Au moins 8 charactères",
     "upTo1Captal": "Au moins 1 majuscule",
@@ -21,7 +22,7 @@
     "repeatePwd": "Repéter le mot de passe",
     "confirmPwd": "Confirmation de mot de passe",
     "connectWith": "Connexion avec",
-    "createAccount": " Créer mon compte",
+    "createAccount": " Créer un compte",
     "dontHaveAccount": "Vous n'avez pas encore de compte ",
     "emailRequired": "Votre email est requis.",
     "firstNameRequired": "Votre nom est requis.",
@@ -61,7 +62,7 @@
     "send": "Envoyer",
     "enterEmailForVerification": "Entrez votre email pour recevoir un lien de réinitialisation de compte.",
     "mailVerification": "Vérification d'adresse mail",
-    "wait": "Veillez patienter.",
+    "wait": "Veillez patienter",
     "error": "Erreur",
     "succes": "Bravo",
     "resend": "Renvoyer",
@@ -124,5 +125,7 @@
     "passionOnlineLotto": "passionné de loto en ligne",
     "orSW": "ou se connecter avec",
     "to": "sur",
-    "welcome": "Bienvenue"
+    "welcome": "Bienvenue",
+    "emailResetSended": "Un mail de vérification a été envoyé à votre adresse email",
+    "seeSpam": "Also check your 'SPAM'. If you did not receive it, click on Resend"
 }
