@@ -9222,7 +9222,7 @@
     }
   }
 
-  .poklotto-form {
+  .smartestlotto-form {
     -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -9230,7 +9230,7 @@
     overflow: hidden;
   }
 
-  .poklotto-form h3.title {
+  .smartestlotto-form h3.title {
     padding: 0 40px;
     background: linear-gradient(317.37deg, #114065 2.76%, #18687A 63.36%);
     font-weight: 600;
@@ -9243,7 +9243,7 @@
   }
 
   @media (max-width: 1199.98px) {
-    .poklotto-form h3.title {
+    .smartestlotto-form h3.title {
       font-size: 30px;
       line-height: 40px;
       padding: 20px 40px 22px;
@@ -9251,7 +9251,7 @@
   }
 
   @media (max-width: 575.98px) {
-    .poklotto-form h3.title {
+    .smartestlotto-form h3.title {
       font-size: 28px;
       line-height: 38px;
       padding: 15px 30px 17px;
@@ -9259,7 +9259,7 @@
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form h3.title {
+    .smartestlotto-form h3.title {
       font-size: 24px;
       line-height: 34px;
       padding: 17px 25px 17px;
@@ -9267,23 +9267,23 @@
     }
   }
 
-  .poklotto-form .part-form {
+  .smartestlotto-form .part-form {
     padding: 40px;
   }
 
   @media (max-width: 575.98px) {
-    .poklotto-form .part-form {
+    .smartestlotto-form .part-form {
       padding: 30px;
     }
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form .part-form {
+    .smartestlotto-form .part-form {
       padding: 25px;
     }
   }
 
-  .poklotto-form .part-form form label {
+  .smartestlotto-form .part-form form label {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -9296,13 +9296,13 @@
   }
 
   @media (max-width: 1199.98px) {
-    .poklotto-form .part-form form label {
+    .smartestlotto-form .part-form form label {
       font-size: 18px;
       line-height: 28px;
     }
   }
 
-  .poklotto-form .part-form form textarea {
+  .smartestlotto-form .part-form form textarea {
     width: 100%;
     border: 1px solid rgba(11, 52, 72, 0.3);
     border-radius: 10px;
@@ -9314,7 +9314,7 @@
     margin-bottom: 20px;
   }
 
-  .poklotto-form .part-form form input {
+  .smartestlotto-form .part-form form input {
     width: 100%;
     border: 1px solid rgba(11, 52, 72, 0.3);
     border-radius: 10px;
@@ -9328,75 +9328,75 @@
 
   @media (max-width: 1399.98px) {
 
-    .poklotto-form .part-form form input,
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form input,
+    .smartestlotto-form .part-form form textarea {
       margin-bottom: 30px;
     }
   }
 
   @media (max-width: 479.98px) {
 
-    .poklotto-form .part-form form input,
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form input,
+    .smartestlotto-form .part-form form textarea {
       font-size: 15px;
       padding: 0 20px;
     }
   }
 
-  .poklotto-form .part-form form input::-webkit-input-placeholder,
-  .poklotto-form .part-form form textarea::-webkit-input-placeholder {
+  .smartestlotto-form .part-form form input::-webkit-input-placeholder,
+  .smartestlotto-form .part-form form textarea::-webkit-input-placeholder {
     color: #869DA9;
   }
 
-  .poklotto-form .part-form form input::-moz-placeholder,
-  .poklotto-form .part-form form textarea::-moz-placeholder {
+  .smartestlotto-form .part-form form input::-moz-placeholder,
+  .smartestlotto-form .part-form form textarea::-moz-placeholder {
     color: #869DA9;
   }
 
-  .poklotto-form .part-form form input:-ms-input-placeholder,
-  .poklotto-form .part-form form textarea:-ms-input-placeholder {
+  .smartestlotto-form .part-form form input:-ms-input-placeholder,
+  .smartestlotto-form .part-form form textarea:-ms-input-placeholder {
     color: #869DA9;
   }
 
-  .poklotto-form .part-form form input::-ms-input-placeholder,
-  .poklotto-form .part-form form textarea::-ms-input-placeholder {
+  .smartestlotto-form .part-form form input::-ms-input-placeholder,
+  .smartestlotto-form .part-form form textarea::-ms-input-placeholder {
     color: #869DA9;
   }
 
-  .poklotto-form .part-form form input::placeholder,
-  .poklotto-form .part-form form textarea::placeholder {
+  .smartestlotto-form .part-form form input::placeholder,
+  .smartestlotto-form .part-form form textarea::placeholder {
     color: #869DA9;
   }
 
-  .poklotto-form .part-form form input {
+  .smartestlotto-form .part-form form input {
     height: 60px;
   }
 
   @media (max-width: 1399.98px) {
-    .poklotto-form .part-form form input {
+    .smartestlotto-form .part-form form input {
       height: 55px;
     }
   }
 
   @media (max-width: 1199.98px) {
-    .poklotto-form .part-form form input {
+    .smartestlotto-form .part-form form input {
       height: 50px;
     }
   }
 
   @media (max-width: 575.98px) {
-    .poklotto-form .part-form form input {
+    .smartestlotto-form .part-form form input {
       height: 45px;
     }
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form .part-form form input {
+    .smartestlotto-form .part-form form input {
       height: 40px;
     }
   }
 
-  .poklotto-form .part-form form textarea {
+  .smartestlotto-form .part-form form textarea {
     height: 180px;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -9407,7 +9407,7 @@
   }
 
   @media (max-width: 1399.98px) {
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form textarea {
       padding-top: 15px;
       padding-bottom: 15px;
       height: 160px;
@@ -9415,7 +9415,7 @@
   }
 
   @media (max-width: 1199.98px) {
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form textarea {
       padding-top: 13px;
       padding-bottom: 13px;
       height: 140px;
@@ -9423,7 +9423,7 @@
   }
 
   @media (max-width: 575.98px) {
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form textarea {
       height: 120px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -9431,13 +9431,13 @@
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form .part-form form textarea {
+    .smartestlotto-form .part-form form textarea {
       padding-top: 8px;
       padding-bottom: 8px;
     }
   }
 
-  .poklotto-form .part-form form .part-submit {
+  .smartestlotto-form .part-form form .part-submit {
     margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9448,7 +9448,7 @@
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form .part-form form .part-submit {
+    .smartestlotto-form .part-form form .part-submit {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
@@ -9459,7 +9459,7 @@
     }
   }
 
-  .poklotto-form .part-form form .part-submit p {
+  .smartestlotto-form .part-form form .part-submit p {
     letter-spacing: 0.01em;
     font-size: 15px;
     line-height: 25px;
@@ -9472,14 +9472,14 @@
   }
 
   @media (max-width: 479.98px) {
-    .poklotto-form .part-form form .part-submit p {
+    .smartestlotto-form .part-form form .part-submit p {
       max-width: 100%;
       margin-left: 0;
       margin-top: 20px;
     }
   }
 
-  .poklotto-form .part-form form .part-submit p a.reg-link {
+  .smartestlotto-form .part-form form .part-submit p a.reg-link {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: -webkit-linear-gradient(219.47deg, #F08B6B 15.1%, #C5B310 86.62%);
@@ -11289,7 +11289,7 @@
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form h3.steps-heading-title {
+    .sign-up .smartestlotto-form h3.steps-heading-title {
       font-size: 30px;
       line-height: 42px;
       padding: 15px 40px 16px;
@@ -11297,20 +11297,20 @@
   }
 
   @media (max-width: 1199.98px) {
-    .sign-up .poklotto-form h3.steps-heading-title {
+    .sign-up .smartestlotto-form h3.steps-heading-title {
       font-size: 28px;
       line-height: 40px;
     }
   }
 
   @media (max-width: 575.98px) {
-    .sign-up .poklotto-form h3.steps-heading-title {
+    .sign-up .smartestlotto-form h3.steps-heading-title {
       font-size: 24px;
       line-height: 34px;
       padding: 10px 30px 11px;
     }
 
-    .sign-up .poklotto-form h3.steps-heading-title.steps-heading-fixed {
+    .sign-up .smartestlotto-form h3.steps-heading-title.steps-heading-fixed {
       position: fixed;
       top: 78.05px;
       width: 100%;
@@ -11320,34 +11320,34 @@
   }
 
   @media (max-width: 575.98px) and (max-width: 479.98px) {
-    .sign-up .poklotto-form h3.steps-heading-title.steps-heading-fixed {
+    .sign-up .smartestlotto-form h3.steps-heading-title.steps-heading-fixed {
       text-align: center;
       top: 73.34px;
     }
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form h3.steps-heading-title {
+    .sign-up .smartestlotto-form h3.steps-heading-title {
       font-size: 22px;
       line-height: 32px;
       padding: 10px 25px 11px;
     }
   }
 
-  .sign-up .poklotto-form h3.steps-heading-title.animated {
+  .sign-up .smartestlotto-form h3.steps-heading-title.animated {
     -webkit-animation: titleAnimate 1s;
     animation: titleAnimate 1s;
   }
 
-  .sign-up .poklotto-form .part-form form {
+  .sign-up .smartestlotto-form .part-form form {
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .birth-date-element {
+  .sign-up .smartestlotto-form .part-form form .birth-date-element {
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .birth-date-element span.caln-icon {
+  .sign-up .smartestlotto-form .part-form form .birth-date-element span.caln-icon {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -11361,7 +11361,7 @@
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form .part-form form .birth-date-element span.caln-icon {
+    .sign-up .smartestlotto-form .part-form form .birth-date-element span.caln-icon {
       height: 55px;
       width: 55px;
       line-height: 55px;
@@ -11369,7 +11369,7 @@
   }
 
   @media (max-width: 1199.98px) {
-    .sign-up .poklotto-form .part-form form .birth-date-element span.caln-icon {
+    .sign-up .smartestlotto-form .part-form form .birth-date-element span.caln-icon {
       height: 50px;
       width: 50px;
       line-height: 50px;
@@ -11377,7 +11377,7 @@
   }
 
   @media (max-width: 575.98px) {
-    .sign-up .poklotto-form .part-form form .birth-date-element span.caln-icon {
+    .sign-up .smartestlotto-form .part-form form .birth-date-element span.caln-icon {
       height: 45px;
       width: 45px;
       line-height: 45px;
@@ -11385,7 +11385,7 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .birth-date-element span.caln-icon {
+    .sign-up .smartestlotto-form .part-form form .birth-date-element span.caln-icon {
       height: 40px;
       width: 40px;
       line-height: 42px;
@@ -11393,15 +11393,15 @@
     }
   }
 
-  .sign-up .poklotto-form .part-form form .birth-date-element #birth-date:focus+span.caln-icon {
+  .sign-up .smartestlotto-form .part-form form .birth-date-element #birth-date:focus+span.caln-icon {
     color: rgba(11, 52, 72, 0.8);
   }
 
-  .sign-up .poklotto-form .part-form form .select-list.question-select button.dropdown-toggle {
+  .sign-up .smartestlotto-form .part-form form .select-list.question-select button.dropdown-toggle {
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list.question-select button.dropdown-toggle:before {
+  .sign-up .smartestlotto-form .part-form form .select-list.question-select button.dropdown-toggle:before {
     position: absolute;
     content: "";
     width: 24px;
@@ -11414,7 +11414,7 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .select-list.question-select button.dropdown-toggle.selected-moment {
+    .sign-up .smartestlotto-form .part-form form .select-list.question-select button.dropdown-toggle.selected-moment {
       height: auto;
       line-height: 23px;
       padding: 10px 25px;
@@ -11422,7 +11422,7 @@
     }
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
     height: 60px;
     width: 100%;
     border: 1px solid rgba(11, 52, 72, 0.3);
@@ -11437,49 +11437,49 @@
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
       height: 55px;
     }
   }
 
   @media (max-width: 1199.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
       height: 50px;
     }
   }
 
   @media (max-width: 767.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
       margin-bottom: 30px;
     }
   }
 
   @media (max-width: 575.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
       height: 45px;
     }
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle {
       height: 40px;
       font-size: 15px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle i {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle i {
     font-size: 14px;
     margin-left: 6px;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle img.flag {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle img.flag {
     width: 20px;
     margin-right: 10px;
     top: -2px;
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle:after {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle:after {
     margin-left: 0;
     vertical-align: middle;
     border: none;
@@ -11499,21 +11499,21 @@
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle:after {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle:after {
       width: 55px;
       line-height: 55px;
     }
   }
 
   @media (max-width: 1199.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle:after {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle:after {
       width: 50px;
       line-height: 50px;
     }
   }
 
   @media (max-width: 575.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle:after {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle:after {
       width: 45px;
       line-height: 45px;
       font-size: 14px;
@@ -11521,30 +11521,30 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle:after {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle:after {
       width: 40px;
       line-height: 40px;
     }
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle.selected-moment {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle.selected-moment {
       font-size: 15px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-toggle.selected-moment:after {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-toggle.selected-moment:after {
     opacity: 0;
     visibility: hidden;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu {
     background: -webkit-linear-gradient(317.37deg, #1e697a 2.76%, #18687A 63.36%);
     border: none;
     border-radius: 0;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     font-family: "Barlow Condensed", sans-serif;
     padding: 5px 30px 6px;
@@ -11558,18 +11558,18 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item {
       font-size: 16px;
       line-height: 24px;
       white-space: break-spaces;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item:first-child {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item:first-child {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item:after {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item:after {
     position: absolute;
     content: "";
     left: 20px;
@@ -11585,35 +11585,35 @@
   }
 
   @media (max-width: 991.98px) {
-    .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item:after {
+    .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item:after {
       left: 10px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item:hover,
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item.active {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item:hover,
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item.active {
     color: #0D3B54;
     background: #fff;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item:hover:after,
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item.active:after {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item:hover:after,
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item.active:after {
     background: #0D3B54;
     opacity: 1;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item i {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item i {
     font-size: 14px;
   }
 
-  .sign-up .poklotto-form .part-form form .select-list .dropdown-menu .dropdown-item img.flag {
+  .sign-up .smartestlotto-form .part-form form .select-list .dropdown-menu .dropdown-item img.flag {
     width: 20px;
     margin-right: 10px;
     top: -2px;
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .prv-stp-btn {
+  .sign-up .smartestlotto-form .part-form form .prv-stp-btn {
     padding: 0;
     width: 60px;
     margin-right: 11px;
@@ -11627,34 +11627,34 @@
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form .part-form form .prv-stp-btn {
+    .sign-up .smartestlotto-form .part-form form .prv-stp-btn {
       width: 50px;
     }
   }
 
   @media (max-width: 767.98px) {
-    .sign-up .poklotto-form .part-form form .prv-stp-btn {
+    .sign-up .smartestlotto-form .part-form form .prv-stp-btn {
       width: 45px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .prv-stp-btn:after {
+  .sign-up .smartestlotto-form .part-form form .prv-stp-btn:after {
     display: none;
   }
 
-  .sign-up .poklotto-form .part-form form .prv-stp-btn.disabled {
+  .sign-up .smartestlotto-form .part-form form .prv-stp-btn.disabled {
     opacity: 0;
     visibility: hidden;
     margin-left: -71px;
   }
 
   @media (max-width: 1399.98px) {
-    .sign-up .poklotto-form .part-form form .prv-stp-btn.disabled {
+    .sign-up .smartestlotto-form .part-form form .prv-stp-btn.disabled {
       margin-left: -61px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form #big-screen {
+  .sign-up .smartestlotto-form .part-form form #big-screen {
     padding: 0;
     width: 40px;
     height: 40px;
@@ -11670,36 +11670,36 @@
     transition: all 0.3s ease-in;
   }
 
-  .sign-up .poklotto-form .part-form form #big-screen i {
+  .sign-up .smartestlotto-form .part-form form #big-screen i {
     font-size: 20px;
     margin-left: 0;
   }
 
-  .sign-up .poklotto-form .part-form form #big-screen:after {
+  .sign-up .smartestlotto-form .part-form form #big-screen:after {
     display: none;
   }
 
   @media (max-width: 991.98px) {
-    .sign-up .poklotto-form .part-form form #big-screen {
+    .sign-up .smartestlotto-form .part-form form #big-screen {
       display: none;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article {
+  .sign-up .smartestlotto-form .part-form form .agreement-article {
     margin: -4px 0 0;
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article .form-check {
+  .sign-up .smartestlotto-form .part-form form .agreement-article .form-check {
     position: relative;
     margin: 0;
     margin-bottom: 13px;
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article .form-check:last-child {
+  .sign-up .smartestlotto-form .part-form form .agreement-article .form-check:last-child {
     margin-bottom: 16px;
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article input {
+  .sign-up .smartestlotto-form .part-form form .agreement-article input {
     border-radius: 0.25em;
     font-weight: unset;
     font-size: unset;
@@ -11723,18 +11723,18 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .agreement-article input {
+    .sign-up .smartestlotto-form .part-form form .agreement-article input {
       width: 15px;
       height: 15px;
       margin-right: 15px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article input:checked[type=checkbox] {
+  .sign-up .smartestlotto-form .part-form form .agreement-article input:checked[type=checkbox] {
     position: relative;
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article input:checked[type=checkbox]:after {
+  .sign-up .smartestlotto-form .part-form form .agreement-article input:checked[type=checkbox]:after {
     content: "\f00c";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -11748,13 +11748,13 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .agreement-article input:checked[type=checkbox]:after {
+    .sign-up .smartestlotto-form .part-form form .agreement-article input:checked[type=checkbox]:after {
       line-height: 15px;
       font-size: 14px;
     }
   }
 
-  .sign-up .poklotto-form .part-form form .agreement-article label {
+  .sign-up .smartestlotto-form .part-form form .agreement-article label {
     letter-spacing: 0.01em;
     font-size: 16px;
     line-height: 32px;
@@ -11774,19 +11774,19 @@
   }
 
   @media (max-width: 479.98px) {
-    .sign-up .poklotto-form .part-form form .agreement-article label {
+    .sign-up .smartestlotto-form .part-form form .agreement-article label {
       font-size: 15px;
       line-height: 25px;
     }
   }
 
-  .sign-up .poklotto-form .part-form .form-controller {
+  .sign-up .smartestlotto-form .part-form .form-controller {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .sign-up .poklotto-form .part-form #big-screen {
+  .sign-up .smartestlotto-form .part-form #big-screen {
     position: absolute;
     right: 0;
     bottom: 10px;

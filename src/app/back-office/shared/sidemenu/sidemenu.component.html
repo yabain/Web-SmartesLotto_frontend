@@ -5,7 +5,6 @@
 	<div class="header-left header-left-one">
 		<a [routerLink]="'/'" class="logo">
 			<img src="assets/img/sl_lightBG.png" alt="Logo" style="height: 50px;">
-			<!-- <b style="font-family: 'fantasy'; font-size: 2em; color: rgb(41, 101, 190);"><a style="color: rgb(172, 172, 172); margin-left: 10px;">y-</a>nkap</b> -->
 		</a>
 		<a [routerLink]="'/'" class="white-logo">
 			<img src="assets/img/sl_lightBG.png" alt="Logo" style="height: 50px;">
@@ -17,9 +16,9 @@
 	<!-- /Logo -->
 
 	<!-- Sidebar Toggle -->
-	<!-- <a href="javascript:void(0);" (click)="burgerMenu()" id="toggle_btn">
+	<a href="javascript:void(0);" (click)="burgerMenu()" id="toggle_btn">
 		<i class="fas fa-bars"></i>
-	</a> -->
+	</a>
 	<!-- /Sidebar Toggle -->
 
 	<!-- Search -->
@@ -56,12 +55,12 @@
 				<a (click)="setFrLang()" class="dropdown-item">
 					<img src="assets/img/flags/fr.png" alt="" height="16"> French
 				</a>
-				<!-- <a href="javascript:void(0);" class="dropdown-item">
+				<a href="javascript:void(0);" class="dropdown-item">
 					<img src="assets/img/flags/es.png" alt="" height="16"> Spanish
 				</a>
 				<a href="javascript:void(0);" class="dropdown-item">
 					<img src="assets/img/flags/de.png" alt="" height="16"> German
-				</a> -->
+				</a>
 			</div>
 		</li>
 		<!-- /Flag -->
@@ -198,7 +197,7 @@
 				<li [class.active]="base === 'index'">
 					<a [routerLink]="'/index'"><i data-feather="home"></i> <span>{{'dashboard' | translate}}</span></a>
 				</li>
-				<!-- <li class="submenu" [class.active]="base === 'application'">
+				<li class="submenu" [class.active]="base === 'application'">
 					<a href="javascript:void(0)"><i data-feather="grid"></i> <span> {{'apps' | translate}}</span> <span
 							class="menu-arrow"></span></a>
 					<ul>
@@ -249,10 +248,10 @@
 				</li>
 				<li [class.active]="base === 'profile'">
 					<a [routerLink]="'/profile'"><i data-feather="user-plus"></i> <span>{{'profile' | translate}}</span></a>
-				</li>  -->
+				</li>
 				<li [class.active]="base === 'setting'">
 					<a [routerLink]="'setting/settings'"><i data-feather="settings"></i> <span>{{'settings' | translate}}</span></a>
-				</li><!--
+				</li>
 				<li [class.active]="base === 'support'">
 					<a [routerLink]="'/application/chat'"><i data-feather="help-circle"></i> <span>{{'support' | translate}}</span></a>
 				</li>
@@ -334,7 +333,7 @@
 						<li><a [routerLink]="'admin-data-table'" [class.active]="base === 'admin-data-table'">Data Table
 							</a></li>
 					</ul>
-				</li> -->
+				</li>
 			</ul>
 		</div>
 	</div>

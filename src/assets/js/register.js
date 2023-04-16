@@ -15,9 +15,9 @@ $(document).ready(function($){
     // scroll in function in medium mobile
     $(window).on("scroll", function(){
         var processing_steps = $('.processing-steps');
-        var poklotto_register_form = $('#poklotto_register_form');
+        var smartestlotto_register_form = $('#smartestlotto_register_form');
         var changeForm_title = $('h3.steps-heading-title');
-        var offsetTop = poklotto_register_form.offset().top;
+        var offsetTop = smartestlotto_register_form.offset().top;
         if($(window).scrollTop() > offsetTop) {
             processing_steps.addClass('top-fixed animate__animated animate__fadeInDown');
             changeForm_title.addClass('steps-heading-fixed');
@@ -68,7 +68,7 @@ $(document).ready(function($){
     var step_three_title = 'Security Details';
     var step_four_title = 'Yeah! It’s Almost Done';
 
-    var heading_title = $('.poklotto-form').find('.steps-heading-title');
+    var heading_title = $('.smartestlotto-form').find('.steps-heading-title');
     
     // step processing
     var step_1 = $('.processing-steps').find('.first-step');

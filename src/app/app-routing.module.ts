@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthenticationGuard } from './services/guard/auth/authentication.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'front', pathMatch: 'full' },
+  // { path: '', redirectTo: 'front', pathMatch: 'full' },
   { path: 'login', redirectTo: 'auth', pathMatch: 'full' },
   { path: 'register', redirectTo: 'auth/register', pathMatch: 'full' },
   { path: 'reset', redirectTo: 'auth/rest-password', pathMatch: 'full' },
@@ -47,12 +47,12 @@ const routes: Routes = [
     canActivate: [AuthenticationGuard],
   },
   {
-    path: 'index',
+    path: '',
     loadChildren: () =>
       import('./back-office/all-modules/all-modules.module').then(m => m.AllModulesModule),
     canActivate: [AuthenticationGuard],
   },
-  { path: '**', redirectTo: 'index', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 
 ];
 
